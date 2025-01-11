@@ -5,41 +5,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./dist/styles.css" />
+  <script src="./script.js"></script>
   <title>Jois | Portfolio</title>
 </head>
 
-<body class="bg-shark-950 text-white font-roboto text-justify">
+<body class="font-roboto text-white text-justify">
   <header>
-    <nav class="mx-2 mt-4 rounded-lg  rounded-2">
+    <nav class="bg-merlot-600 text-white mx-2 mt-4 rounded-lg shadow-lg  rounded-2">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <span class="self-center text-2xl font-bold whitespace-nowrap">My Portfolio</span>
         <button data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-merlot-900 rounded-2 focus:outline-none focus:ring-2 focus:ring-merlot-950 hover:transition"
           aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-merlot-700 border-merlot-950-outset rounded-2 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
             <li>
               <a href="#skills"
-                class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0">Skills</a>
+                class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0 bg-merlot-900 border-merlot-950-outset rounded-2">Skills</a>
             </li>
             <li>
               <a href="#projects"
-                class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0">Projects</a>
+                class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0 bg-merlot-900 border-merlot-950-outset rounded-2">Projects</a>
             </li>
             <li>
-              <a href="#about" class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0">About
+              <a href="#about"
+                class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0 bg-merlot-900 border-merlot-950-outset rounded-2">About
                 me</a>
             </li>
             <li>
               <a href="#contact"
-                class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0">Contact
+                class="block py-2 px-3 hover:transition hover:scale-125 rounded md:border-0 md:p-0 bg-merlot-900 border-merlot-950-outset rounded-2">Contact
                 me</a>
             </li>
           </ul>
@@ -52,19 +54,19 @@
     <section id="home" class="py-4 px-4 my-16 mx-2 rounded-2">
       <div class="text-center">
         <div class="flex flex-col md:flex-row items-center justify-center text-4xl">
-          <h1 class="mx-4">Hi, i'm</h1>
-          <p class="text-6xl md:text-10xl font-franck">Jois (he/him)</p>
+          <h1 class="mx-4 text-merlot-950">Hi, i'm</h1>
+          <p class=" md:text-10xl font-bold font-franck text-merlot-600">Jois (he/him)</p>
         </div>
-        <div class="w-fit p-1 rounded-2 text-xl md:text-2xl mx-auto mt-4">
+        <div class="w-fit p-1 rounded-2 text-xl md:text-2xl mx-auto mt-4 text-merlot-950">
           Front-end Developer from Chile
         </div>
       </div>
     </section>
 
-    <section id="skills" class="py-5 px-8 bg-shark-900">
-      <h1 class="text-white text-4xl font-bold mb-8 text-center">SKILLS</h1>
+    <section id="skills" class="py-5 px-8 bg-merlot-600 rounded-2 mx-2">
+      <h1 class="text-white text-4xl font-bold mb-8 text-center">Skills</h1>
       <div class="flex flex-row flex-wrap gap-9 justify-center">
-        <div class="bg-shark-900 hover:scale-125 hover:transition rounded-2 my-2 mx-2">
+        <div class=" hover:scale-125 hover:transition rounded-2 my-2 mx-2">
           <img src="./assets/html-5.png" alt="HTML" class="p-2 shadow-img">
         </div>
         <div class=" hover:scale-125 hover:transition rounded-2 my-2 mx-2">
@@ -88,11 +90,12 @@
       </div>
     </section>
 
-    <section id="projects" class="py-5 px-8 text-white">
-      <h1 class="text-white text-4xl font-bold mb-8 text-center">PROJECTS</h1>
+    <section id="projects" class="py-5 px-8 bg-merlot-600 rounded-2 mx-2 my-2">
+      <h1 class=" text-white text-4xl font-bold mb-8 text-center">Projects</h1>
       <div class="flex flex-col md:flex-row rounded-lg">
-        <div class="flex justify-center items-center p-2 bg-main-800 rounded-2 relative py-16 max-w-lg shadow-img">
-          <div class="absolute top-4 left-4 rounded-2 p-2 bg-shark-900">
+        <div
+          class="flex justify-center items-center p-2 bg-merlot-800 rounded-2 relative py-16 max-w-lg border-merlot-950-inset">
+          <div class="text-white absolute top-4 left-4 rounded-2 p-2 bg-merlot-900 border-merlot-950-outset">
             Conceptual work
           </div>
           <img src="./assets/st-landing.webp" alt="Card Preview" class="rounded-2">
@@ -124,7 +127,7 @@
               </tbody>
             </table>
             <div
-              class="flex flex-row gap-2 py-3 px-3 my-3 rounded-2 w-fit bg-shark-900 hover:scale-125 hover:transition shadow-img">
+              class="flex flex-row gap-2 py-3 px-3 my-3 rounded-2 w-fit bg-merlot-900 border-merlot-950-outset hover:scale-125 hover:transition">
               <a href="https://github.com/JoisRF">SEE ON GITHUB</a>
               <img src="./assets/github.svg" alt="github" class="w-5 h-auto">
             </div>
@@ -133,25 +136,27 @@
       </div>
     </section>
 
-    <section id="about" class="py-16 px-8 bg-shark-900">
-      <h1 class="text-white text-4xl font-bold mb-8 text-center">ABOUT ME</h1>
-      
+    <section id="about" class="py-16 px-8 bg-merlot-600 rounded-2 mx-2 my-2">
+      <h1 class="text-white text-4xl font-bold mb-8 text-center">About me</h1>
       <!-- Contenedor principal con flex row -->
       <div class="flex flex-col md:flex-row gap-8 items-start">
-        
         <!-- Columna izquierda para imagen y botones -->
         <div class="md:w-1/3 flex flex-col items-center gap-4">
           <figure>
-            <img src="./assets/joispfp.png" alt="jois" class="rounded-2 pt-2 bg-shark-950 my-3 shadow-img">
+            <img src="./assets/joispfp.png" alt="jois"
+              class="rounded-2 pt-2 bg-merlot-800 my-3 border-merlot-950-inset">
           </figure>
-          <div class="flex flex-col gap-4 w-full">
-            <div class="flex flex-row gap-2 py-3 px-3 rounded-2 bg-shark-950 w-full hover:scale-125 hover:transition my-2">
+          <div class="w-fit flex flex-col gap-4">
+            <div
+              class="flex flex-row gap-2 py-3 px-3 rounded-2 bg-merlot-900 border-merlot-950-outset w-full hover:scale-125 hover:transition my-2">
               <a href="./assets/talkchile-jois.pdf" class="w-full text-center">ENGLISH CERTIFICATE</a>
             </div>
-            <div class="flex flex-row gap-2 py-3 px-3 rounded-2 bg-shark-950 w-full hover:scale-125 hover:transition my-2">
+            <div
+              class="flex flex-row gap-2 py-3 px-3 rounded-2 bg-merlot-900 border-merlot-950-outset w-full hover:scale-125 hover:transition my-2">
               <a href="./assets/scrum-jois.pdf" class="w-full text-center">SCRUM CERTIFICATE</a>
             </div>
-            <div class="flex flex-row gap-2 py-3 px-3 rounded-2 bg-shark-950 w-full hover:scale-125 hover:transition my-2">
+            <div
+              class="flex flex-row gap-2 py-3 px-3 rounded-2 bg-merlot-900 border-merlot-950-outset w-full hover:scale-125 hover:transition my-2">
               <a href="./assets/cv-jois.pdf" class="w-full text-center">RESUME</a>
             </div>
           </div>
@@ -160,14 +165,18 @@
         <!-- Columna derecha para textos -->
         <div class="md:w-2/3 text-xl">
           <div class="flex flex-col">
-            <div class="my-3 text-justify">
-              I am a 21 years old student of Computer Engineering in my 7th semester, with a main focus on front-end development.
+            <div class="my-3 text-justify font-bold">
+              I am a 21 years old student of Computer Engineering in my 7th semester, with a main focus on front-end
+              development.
             </div>
             <div class="my-3 text-justify">
-              I have participated in collaborative academic projects implemented under agile methodologies such as Scrum, which has allowed me to develop teamwork skills, problem solving and adaptation to dynamic environments.
+              I have participated in collaborative academic projects implemented under agile methodologies such as
+              Scrum, which has allowed me to develop teamwork skills, problem solving and adaptation to dynamic
+              environments.
             </div>
             <div class="my-3 text-justify">
-              Currently, I am looking for an internship opportunity that allows me to apply my knowledge, keep learning, and overcome challenges to add value and develop as a professional in the technological field.
+              Currently, I am looking for an internship opportunity that allows me to apply my knowledge, keep learning,
+              and overcome challenges to add value and develop as a professional in the technological field.
             </div>
           </div>
         </div>
@@ -175,10 +184,10 @@
     </section>
   </main>
 
-  <footer id="contact" class="py-16 px-8 bg-beige-200">
+  <footer id="contact" class="py-16 px-8 bg-merlot-600 rounded-2 mx-2 my-2">
     <div class="text-beige-950 flex flex-col max-w-screen-xl mx-auto">
       <div class="text-4xl font-bold mb-8 p-4 text-center">
-        If you wish to contact me for Partnerships, New Projects or simply for Consulting:
+        if you want, you can contact me for new projects or simply for inquiries:
       </div>
 
       <div class="flex flex-col md:flex-row justify-center gap-4">
@@ -195,13 +204,16 @@
         <div class="p-4 text-center">
           <h1 class="font-bold text-4xl mb-4 text-beige-600">Let's be social</h1>
           <div class="flex flex-row gap-4 justify-center">
-            <div class="bg-beige-500 hover:bg-beige-600 hover:scale-125 hover:transition rounded-full w-fit p-2 mx-2">
+            <div
+              class="bg-merlot-700 border-merlot-950-outset hover:scale-125 hover:transition rounded-full w-fit p-2 mx-2">
               <a href=""><img src="./assets/instagram.svg" alt="instagram" class="w-icon"></a>
             </div>
-            <div class="bg-beige-500 hover:bg-beige-600 hover:scale-125 hover:transition rounded-full w-fit p-2 mx-2">
+            <div
+              class="bg-merlot-700 border-merlot-950-outset hover:scale-125 hover:transition rounded-full w-fit p-2 mx-2">
               <a href=""><img src="./assets/linkedin.svg" alt="linkedin" class="w-icon"></a>
             </div>
-            <div class="bg-beige-500 hover:bg-beige-600 hover:scale-125 hover:transition rounded-full w-fit p-2 mx-2">
+            <div
+              class="bg-merlot-700 border-merlot-950-outset hover:scale-125 hover:transition rounded-full w-fit p-2 mx-2">
               <a href="https://github.com/JoisRosalesDev"><img src="./assets/github.svg" alt="github"
                   class="w-icon"></a>
             </div>
