@@ -633,8 +633,32 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.right-16 {
+  right: 4rem;
 }
 
 .block {
@@ -808,6 +832,13 @@ video {
   cursor: pointer;
 }
 
+.hover\:border-merlot-900:hover {
+  border-color: #841c26;
+  border-style: dashed;
+  border-width: 3px;
+  cursor: pointer;
+}
+
 .border-merlot-600 {
   border-color: #df2335;
   border-style: dashed;
@@ -818,18 +849,10 @@ video {
   border-width: 2px;
 }
 
-.border-dashed {
-  border-style: dashed;
-  border-color: #424439;
-  border-width: 3px;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-
 .divide-y-2 {
   border-top-width: 2px;
   border-bottom-width: 0px;
-  border-color: #33342d;
+  border-color: white;
 }
 
 .opacity-50 {
