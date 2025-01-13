@@ -828,14 +828,14 @@ video {
 .hover\:border-merlot-200:hover {
   border-color: #ffc9ce;
   border-style: dashed;
-  border-width: 3px;
+  border-width: 2px;
   cursor: pointer;
 }
 
 .hover\:border-merlot-900:hover {
   border-color: #841c26;
   border-style: dashed;
-  border-width: 3px;
+  border-width: 2px;
   cursor: pointer;
 }
 
