@@ -722,7 +722,7 @@ video {
 }
 
 .w-icon {
-  width: 50px;
+  width: 32px;
   height: auto;
 }
 
@@ -817,32 +817,8 @@ video {
   border-radius: 9999px;
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .border {
   border-width: 1px;
-}
-
-.hover\:border-merlot-200:hover {
-  border-color: #ffc9ce;
-  border-style: dashed;
-  border-width: 2px;
-  cursor: pointer;
-}
-
-.hover\:border-merlot-900:hover {
-  border-color: #841c26;
-  border-style: dashed;
-  border-width: 2px;
-  cursor: pointer;
-}
-
-.border-merlot-600 {
-  border-color: #df2335;
-  border-style: dashed;
-  border-width: 3px;
 }
 
 .border-2 {
@@ -850,9 +826,9 @@ video {
 }
 
 .divide-y-2 {
-  border-top-width: 2px;
+  border-top-width: 1px;
   border-bottom-width: 0px;
-  border-color: white;
+  border-color: #020617;
 }
 
 .opacity-50 {
@@ -869,114 +845,95 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
 }
 
-.border-merlot-950-outset {
-  border-width: 2px;
-  border-color: #46090f;
-  border-style: outset;
+.bg-slate-50 {
+  background-color: #f8fafc;
 }
 
-.border-merlot-950-inset {
-  border-width: 2px;
-  border-color: #46090f;
-  border-style: inset;
+.bg-slate-100 {
+  background-color: #f1f5f9;
 }
 
-.border-merlot-950-solid {
-  border-width: 2px;
-  border-color: #46090f;
+.bg-slate-200 {
+  background-color: #e2e8f0;
+}
+
+.bg-slate-300 {
+  background-color: #cbd5e1;
+}
+
+.hover\:bg-slate-300:hover {
+  background-color: #cbd5e1;
+}
+
+.bg-slate-400 {
+  background-color: #94a3b8;
+}
+
+.bg-slate-500 {
+  background-color: #64748b;
+}
+
+.border-slate-500 {
+  border-color: #64748b;
+  border-width: 1px;
   border-style: solid;
 }
 
-.bg-shark-50 {
-  background-color: #f7f7f8;
+.bg-slate-600 {
+  background-color: #334155;
 }
 
-.bg-shark-100 {
-  background-color: #eeeef0;
+.bg-slate-800 {
+  background-color: #1e293b;
 }
 
-.bg-shark-200 {
-  background-color: #dadadd;
+.bg-slate-900 {
+  background-color: #0f172a;
 }
 
-.bg-shark-300 {
-  background-color: #babbbf;
+.bg-slate-950 {
+  background-color: #020617;
 }
 
-.bg-shark-400 {
-  background-color: #94959c;
+.text-slate-950 {
+  color: #020617;
 }
 
-.bg-shark-500 {
-  background-color: #777880;
+.text-slate-50 {
+  color: #f8fafc;
 }
 
-.bg-shark-600 {
-  background-color: #606169;
+.bg-blue-200 {
+  background-color: #a5b4fc;
 }
 
-.bg-shark-700 {
-  background-color: #4e4e56;
+.bg-blue-300 {
+  background-color: #818cf8;
 }
 
-.bg-shark-800 {
-  background-color: #434349;
+.bg-blue-400 {
+  background-color: #60a5fa;
 }
 
-.bg-shark-900 {
-  background-color: #3b3c3f;
+.bg-blue-500 {
+  background-color: #3b82f6;
 }
 
-.bg-shark-950 {
-  background-color: #28282b;
+.bg-blue-600 {
+  background-color: #2563eb;
 }
 
-.bg-merlot-50 {
-  background-color: #fef2f3;
+.hover\:bg-blue-700:hover {
+  background-color: #1d4ed8;
+  cursor: pointer;
 }
 
-.bg-merlot-100 {
-  background-color: #fee2e5;
+.bg-green-500 {
+  background-color: #16a34a;
 }
 
-.bg-merlot-200 {
-  background-color: #ffc9ce;
-}
-
-.bg-merlot-300 {
-  background-color: #fea3ac;
-}
-
-.bg-merlot-400 {
-  background-color: #fa6f7c;
-}
-
-.bg-merlot-500 {
-  background-color: #f24152;
-}
-
-.bg-merlot-600 {
-  background-color: #df2335;
-}
-
-.bg-merlot-700 {
-  background-color: #bc1929;
-}
-
-.bg-merlot-800 {
-  background-color: #9b1926;
-}
-
-.bg-merlot-900 {
-  background-color: #841c26;
-}
-
-.hover\:bg-merlot-900:hover {
-  background-color: #841c26;
-}
-
-.bg-merlot-950 {
-  background-color: #46090f;
+.bg-red-500 {
+  background-color: #ef4444;
 }
 
 .bg-white {
@@ -1006,6 +963,11 @@ video {
 
 .p-16 {
   padding: 4rem;
+}
+
+.px-screen {
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 .pt-1 {
@@ -1160,14 +1122,6 @@ xl:order-1  /* @media (min-width: 1280px) */
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
-.text-merlot-600 {
-  color: #df2335;
-}
-
-.text-merlot-950 {
-  color: #46090f;
-}
-
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
@@ -1197,8 +1151,8 @@ xl:order-1  /* @media (min-width: 1280px) */
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:scale-125:hover {
-  transform: scale(1.25);
+.hover\:scale-115:hover {
+  transform: scale(1.15);
 }
 
 .hover\:transition:hover {
