@@ -59,9 +59,13 @@
 
     <section id="home" class="py-16 px-4 bg-slate-900">
       <div class="text-center">
-        <div class="flex flex-col md:flex-row items-center justify-center text-10xl">
-          <h1 class="mx-4 text-slate-50">Hi, i'm</h1>
-          <p class="font-bold font-franck text-slate-50">Jois (he/him)</p>
+        <div class="wrapper flex items-center justify-center h-screen bg-gray-900">
+          <div class="typing-demo text-slate-50 font-mono text-10xl md:text-4xl">
+            <div class="flex flex-col md:flex-row md:gap-2">
+              <span>Hi, I'm</span>
+              <span class=" font-bold font-franck text-gradient">Jois (he/him)</span>
+            </div>
+          </div>
         </div>
         <div class="w-fit p-1 rounded-2 text-4xl mx-auto mt-4 text-slate-50">
           Front-end Developer from Chile
@@ -76,20 +80,20 @@
       </div>
     </section>
 
-    <section id="services" class="text-slate-950 py-5 px-8 bg-slate-50 rounded-2 mx-2 my-2">
-      <h1 class=" text-10xl font-bold mb-8 text-center">My Services</h1>
+    <section id="services" class="card-animation text-slate-950 py-5 px-8 bg-slate-50 rounded-2 mx-2 my-2">
+      <h1 class="text-10xl font-bold mb-8 text-center">My Services</h1>
       <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
+        <div class=" bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
           <ul class="text-xl">
             <img src="./assets/create.svg" alt="ux-ui" class="w-icon mx-auto mb-4">
-            <h1 class=" text-2xl font-bold mb-4">Development of modern web interfaces</h1>
+            <h1 class="text-2xl font-bold mb-4">Development of modern web interfaces</h1>
             <li>
               Creation of attractive and functional web pages using technologies such as HTML, CSS and JavaScript,
               implementing frameworks such as Tailwind.
             </li>
           </ul>
         </div>
-        <div class="bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
+        <div class=" bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
           <ul class="text-xl">
             <img src="./assets/responsive.svg" alt="responsive" class="w-icon mx-auto mb-4">
             <h1 class=" text-2xl font-bold mb-4">Responsive and adaptive design</h1>
@@ -98,7 +102,7 @@
             </li>
           </ul>
         </div>
-        <div class="bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
+        <div class=" bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
           <ul class="text-xl">
             <img src="./assets/happy.svg" alt="user" class="w-icon mx-auto mb-4">
             <h1 class=" text-2xl font-bold mb-4">User experience optimization (UX)</h1>
@@ -110,7 +114,7 @@
       </div>
     </section>
 
-    <section id="skills" class="py-5 px-8 bg-slate-200 text-slate-950">
+    <section id="skills" class="card-animation py-5 px-8 bg-slate-200 text-slate-950">
       <h1 class=" text-10xl font-bold mb-8 text-center">Skills</h1>
       <div class="flex flex-col md:flex-row gap-4">
         <div class="flex-1 bg-slate-300 rounded-2 p-4 flex flex-col gap-4 my-2 mx-2">
@@ -126,7 +130,6 @@
             <span class="bg-blue-600 hover:bg-blue-700 rounded-2 p-2 my-2 mx-2">Git</span>
             <span class="bg-blue-600 hover:bg-blue-700 rounded-2 p-2 my-2 mx-2">Jira</span>
             <span class="bg-blue-600 hover:bg-blue-700 rounded-2 p-2 my-2 mx-2">Scrum</span>
-            <span class="bg-blue-600 hover:bg-blue-700 rounded-2 p-2 my-2 mx-2">Figma</span>
           </div>
         </div>
         <div class="flex-1 bg-slate-300 rounded-2 p-4 flex flex-col gap-4 my-2 mx-2">
@@ -147,7 +150,7 @@
       </div>
     </section>
 
-    <section id="projects" class="py-5 px-8 rounded-1 my-2 text-slate-950">
+    <section id="projects" class="card-animation py-5 px-8 rounded-1 my-2 text-slate-950">
       <h1 class=" text-10xl font-bold mb-8 text-center">Projects</h1>
       <div class="flex flex-col md:flex-row rounded-2 bg-slate-300 shadow-lg">
         <div
@@ -193,7 +196,7 @@
       </div>
     </section>
 
-    <section id="about" class="py-16 px-8 bg-slate-200">
+    <section id="about" class="card-animation py-16 px-8 bg-slate-200">
       <h1 class="text-slate-950 text-10xl font-bold mb-8 text-center">About me</h1>
       <!-- Cambiamos a flex-col para apilar los elementos -->
       <div class="flex flex-col items-center gap-8">
@@ -237,16 +240,16 @@
     </section>
   </main>
 
-  <footer id="contact" class="py-16 px-8 bg-merlot-600 rounded-2 mx-2 my-2">
+  <footer id="contact" class="card-animation py-16 px-8 bg-merlot-600 rounded-2 mx-2 my-2">
     <div class="text-beige-950 flex flex-col max-w-screen-xl mx-auto">
       <div class="text-10xl font-bold mb-8 p-4 text-center">
-        If you want, you can contact me for new projects or simply for inquiries:
+        Contact me
       </div>
-
       <div class="flex flex-col md:flex-row justify-center gap-4">
         <div class="p-4 text-center">
           <h1 class="font-bold text-4xl text-beige-600 mb-4">Write me an email</h1>
-          <form action="https://formsubmit.co/joisrosafer@gmail.com" method="POST" class="bg-slate-200 rounded-2 p-4 flex flex-col gap-4 shadow-lg">
+          <form action="https://formsubmit.co/joisrosafer@gmail.com" method="POST"
+            class="bg-slate-200 rounded-2 p-4 flex flex-col gap-4 shadow-lg">
             <div class="flex flex-col">
               <label for="name" class="text-left my-2">Name</label>
               <input type="text" id="name" name="name" class="bg-slate-50 rounded-1 p-2 w-full">
@@ -276,7 +279,6 @@
             <input type="hidden" name="_captcha" value="false">
           </form>
         </div>
-
         <div class="p-4 text-center">
           <h1 class="font-bold text-4xl mb-4 text-beige-600">Let's be social</h1>
           <div class="flex flex-row gap-4 justify-center">
