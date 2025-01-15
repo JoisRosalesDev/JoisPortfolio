@@ -899,6 +899,14 @@ video {
   background-color: #0f172a;
 }
 
+.bg-gradient-dark {
+  background: linear-gradient(to right, #020617, #0f172a);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(to right, #f8fafc, #f1f5f9);
+}
+
 .bg-slate-950 {
   background-color: #020617;
 }
@@ -909,26 +917,6 @@ video {
 
 .text-slate-50 {
   color: #f8fafc;
-}
-
-.bg-blue-200 {
-  background-color: #a5b4fc;
-}
-
-.bg-blue-300 {
-  background-color: #818cf8;
-}
-
-.bg-blue-400 {
-  background-color: #60a5fa;
-}
-
-.bg-blue-500 {
-  background-color: #3b82f6;
-}
-
-.bg-blue-600 {
-  background-color: #2563eb;
 }
 
 .text-gradient {
@@ -1121,9 +1109,9 @@ video {
 
 .typing-demo {
   /* Aplicar el estilo de la animación */
-  width: 11ch;
+  width: 12ch;
   /* Controla la longitud del texto visible */
-  animation: typing 3s steps(11), blink 0.5s step-end infinite alternate;
+  animation: typing 3s steps(12), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
