@@ -864,7 +864,14 @@ video {
 
 .hover\:bg-slate-300:hover {
   background-color: #cbd5e1;
+  transition: background-color 0.3s ease;
 }
+
+.hover\:bg-slate-400:hover {
+  background-color: #94a3b8;
+  transition: background-color 0.3s ease;
+}
+
 
 .bg-slate-400 {
   background-color: #94a3b8;
@@ -927,22 +934,64 @@ video {
 .text-gradient {
   font-weight: bold;
   /* Equivalente a font-bold */
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   /* Equivalente a mx-2 */
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   font-style: oblique;
-  background: linear-gradient(to right, #1E3A8A, #10B981, #6D28D9);
+  background: linear-gradient(to right, #00FFAB, #00A9FF);
   -webkit-background-clip: text;
   /* Clipa el gradiente solo al texto */
   -webkit-text-fill-color: transparent;
   /* Hace que el texto sea transparente */
 }
 
-
 .hover\:bg-blue-700:hover {
   background-color: #1d4ed8;
   cursor: pointer;
 }
+
+/* Botón Primario */
+.btn-primary {
+  background-color: #3B82F6; /* Azul brillante */
+  color: #FFFFFF; /* Texto blanco */
+  font-weight: 700; /* Equivalente a font-bold */
+  padding: 0.5rem 1rem; /* Equivalente a py-2 px-4 */
+  border-radius: 0.375rem; /* Equivalente a rounded */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.btn-primary:hover {
+  background-color: #2563EB; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Botón Secundario */
+.btn-secondary {
+  background-color: #374151; /* Gris oscuro */
+  color: #FFFFFF; /* Texto blanco */
+  font-weight: 600; /* Equivalente a font-semibold */
+  padding: 0.5rem 1rem; /* Equivalente a py-2 px-4 */
+  border-radius: 0.375rem; /* Equivalente a rounded */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.btn-secondary:hover {
+  background-color: #1F2937; /* Gris más oscuro al pasar el mouse */
+}
+
+/* Botón Éxito */
+.btn-success {
+  background-color: #10B981; /* Verde esmeralda */
+  color: #FFFFFF; /* Texto blanco */
+  font-weight: 700; /* Equivalente a font-bold */
+  padding: 0.5rem 1rem; /* Equivalente a py-2 px-4 */
+  border-radius: 0.375rem; /* Equivalente a rounded */
+  transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.btn-success:hover {
+  background-color: #059669; /* Verde más oscuro al pasar el mouse */
+}
+
 
 .bg-green-500 {
   background-color: #16a34a;
@@ -1058,9 +1107,10 @@ video {
   }
 }
 
-.card-animation {
-  animation: fade-slide 0.8s ease-out forwards;
-  opacity: 0; /* Comienza oculto */
+@layer utilities {
+  .card-animation {
+    animation: fade-slide 0.8s ease-out forwards;
+  }
 }
 
 .wrapper {
@@ -1071,9 +1121,9 @@ video {
 
 .typing-demo {
   /* Aplicar el estilo de la animación */
-  width: 16ch;
+  width: 11ch;
   /* Controla la longitud del texto visible */
-  animation: typing 3s steps(16), blink 0.5s step-end infinite alternate;
+  animation: typing 3s steps(11), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
