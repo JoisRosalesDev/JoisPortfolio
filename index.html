@@ -2,15 +2,17 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./dist/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/styles.css">
   <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <title>Jois | Portfolio</title>
 </head>
 
 <body class="font-roboto text-slate-950 text-justify bg-gradient-light">
-  <header class="w-full pt-4">
+  <header class="w-full pt-4" data-aos="fade-down">
     <div class="container mx-auto px-2">
       <nav class="bg-slate-50 border-gray-200">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -23,105 +25,86 @@
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
               class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-              <li>
-                <a href="#home" class="block py-2 px-3 text-slate-950 rounded md:bg-transparent md:p-0"
-                  aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#services"
+              <li><a href="#home" class="block py-2 px-3 text-slate-950 rounded md:bg-transparent md:p-0"
+                  aria-current="page">Home</a></li>
+              <li><a href="#services"
                   class="block py-2 px-3 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
               </li>
-              <li>
-                <a href="#skills"
+              <li><a href="#skills"
                   class="block py-2 px-3 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Skills</a>
               </li>
-              <li>
-                <a href="#projects"
+              <li><a href="#projects"
                   class="block py-2 px-3 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Projects</a>
               </li>
-              <li>
-                <a href="#about"
+              <li><a href="#about"
                   class="block py-2 px-3 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
               </li>
-              <li>
-                <a href="#contact"
+              <li><a href="#contact"
                   class="block py-2 px-3 text-slate-950 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-
     </div>
   </header>
-  <main>
 
-    <section id="home" class="py-16 px-4 bg-gradient-dark">
+  <main>
+    <section id="home" class="py-16 px-4 bg-gradient-dark" data-aos="zoom-in">
       <div class="text-center">
-        <div class=" flex items-center justify-center h-screen bg-gray-900">
-          <div class=" text-slate-50 font-mono text-10xl md:text-4xl">
+        <div class="flex items-center justify-center h-screen bg-gray-900">
+          <div class="text-slate-50 font-mono text-10xl md:text-4xl">
             <div class="flex flex-col md:flex-row md:gap-2">
               <span>Hi, I'm</span>
               <div class="wrapper">
-                <span class=" font-bold font-franck text-gradient typing-demo">Jois (he/him).</span>
+                <span class="font-bold font-franck text-gradient typing-demo">Jois (he/him).</span>
               </div>
-
             </div>
           </div>
         </div>
-        <div class="w-fit p-1 rounded-2 text-4xl mx-auto mt-4 text-slate-50">
-          Front-end Developer from Chile
-        </div>
+        <div class="w-fit p-1 rounded-2 text-4xl mx-auto mt-4 text-slate-50">Front-end Developer from Chile</div>
         <div class="w-fit mx-auto">
           <a href="./assets/cv-jois.pdf" class="btn-primary p-2 mt-8 mx-2 flex flex-row items-center gap-2 text-center">
-            <h1 class=" text-2xl font-bold">Resume</h1>
+            <h1 class="text-2xl font-bold">Resume</h1>
             <img src="./assets/file.svg" alt="resume" class="w-icon">
           </a>
         </div>
       </div>
     </section>
 
-    <section id="services" class="text-slate-950 py-5 px-8">
-      <h1 class="text-10xl font-bold mb-8 text-center">My Services</h1>
+    <section id="services" class="text-slate-950 py-5 px-8" data-aos="fade-up">
+      <h1 class="text-10xl font-bold mb-1 text-center">Services</h1>
       <div class="flex flex-col md:flex-row">
-        <div
-          class="bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
+        <div class="bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
           <ul class="text-xl">
             <img src="./assets/create.svg" alt="ux-ui" class="w-icon mx-auto mb-4">
             <h1 class="text-2xl font-bold mb-4">Development of modern web interfaces</h1>
-            <li>
-              Creation of attractive and functional web pages using technologies such as HTML, CSS and JavaScript,
-              implementing frameworks such as Tailwind.
-            </li>
+            <li>Creation of attractive and functional web pages using technologies such as HTML, CSS and JavaScript,
+              implementing frameworks such as Tailwind.</li>
           </ul>
         </div>
-        <div class=" bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
+        <div class="bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
           <ul class="text-xl">
             <img src="./assets/responsive.svg" alt="responsive" class="w-icon mx-auto mb-4">
-            <h1 class=" text-2xl font-bold mb-4">Responsive and adaptive design</h1>
-            <li>
-              Ensure that websites work perfectly on mobile devices, tablets and desktop screens.
-            </li>
+            <h1 class="text-2xl font-bold mb-4">Responsive and adaptive design</h1>
+            <li>Ensure that websites work perfectly on mobile devices, tablets and desktop screens.</li>
           </ul>
         </div>
-        <div class=" bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
+        <div class="bg-slate-200 hover:bg-slate-300 rounded-2 p-4 my-2 mx-2 flex flex-col gap-4 text-center shadow-lg">
           <ul class="text-xl">
             <img src="./assets/happy.svg" alt="user" class="w-icon mx-auto mb-4">
-            <h1 class=" text-2xl font-bold mb-4">User experience optimization (UX)</h1>
-            <li>
-              Improve navigation, accessibility and usability of the website.
-            </li>
+            <h1 class="text-2xl font-bold mb-4">User experience optimization (UX)</h1>
+            <li>Improve navigation, accessibility and usability of the website.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="project-card opacity-0 py-5 px-8 bg-slate-200 text-slate-950">
-      <h1 class="text-10xl font-bold mb-8 text-center">Skills</h1>
+    <section id="skills" class="project-card opacity-0 py-5 px-8 bg-slate-200 text-slate-950" data-aos="fade-right">
+      <h1 class="text-10xl font-bold mb-1 text-center">Skills</h1>
       <div class="flex flex-col md:flex-row gap-4">
         <div class="flex-1 bg-slate-300 rounded-2 p-4 flex flex-col gap-4 my-2 mx-2">
-          <h1 class="text-4xl font-bold mb-8 text-center">Technologies</h1>
+          <h1 class="text-4xl font-bold mb-1 text-center">Technologies</h1>
           <div class="flex flex-row flex-wrap gap-4 text-slate-50">
             <span class="btn-secondary rounded-2 p-2 my-2 mx-2">HTML</span>
             <span class="btn-secondary rounded-2 p-2 my-2 mx-2">CSS</span>
@@ -136,57 +119,50 @@
           </div>
         </div>
         <div class="flex-1 bg-slate-300 rounded-2 p-4 flex flex-col gap-4 my-2 mx-2">
-          <h1 class="text-4xl font-bold mb-8 text-center">Soft</h1>
+          <h1 class="text-4xl font-bold mb-1 text-center">Soft</h1>
           <div class="flex flex-row flex-wrap gap-4 text-slate-50">
-            <span class="btn-secondary  p-2 my-2 mx-2">Teamwork</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Adaptability</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Problem Solving</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Communication</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Leadership</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Creativity</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Empathy</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Time Management</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Self-Motivation</span>
-            <span class="btn-secondary  p-2 my-2 mx-2">Proactivity</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Teamwork</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Adaptability</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Problem Solving</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Communication</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Leadership</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Creativity</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Empathy</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Time Management</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Self-Motivation</span>
+            <span class="btn-secondary p-2 my-2 mx-2">Proactivity</span>
           </div>
         </div>
       </div>
     </section>
 
-
-    <section id="projects" class="project-card opacity-0 py-5 px-8 text-slate-950">
-      <h1 class=" text-10xl font-bold mb-8 text-center">Projects</h1>
+    <section id="projects" class="project-card opacity-0 py-5 px-8 text-slate-950" data-aos="fade-up">
+      <h1 class="text-10xl font-bold mb-1 text-center">Projects</h1>
       <div class="flex flex-col md:flex-row rounded-2 bg-slate-300 shadow-lg">
         <div
           class="flex justify-center items-center p-2 bg-slate-200 hover:bg-slate-400 rounded-2 relative py-16 max-w-lg">
-          <div class=" absolute top-4 left-4 p-2 btn-secondary">
-            Conceptual work
-          </div>
+          <div class="absolute top-4 left-4 p-2 btn-secondary">Conceptual work</div>
           <img src="./assets/st-landing.webp" alt="Card Preview" class="rounded-2">
         </div>
         <div class="flex flex-col justify-center p-4 order-1 md:order-2">
-          <div class="text-4xl  font-bold pb-6 my-1">
-            Promotional Website for our favorite TV show
-          </div>
-          <div class="text-xl my-1">
-            website strategically designed for the public to learn more about their favorite characters from this TV
-            show.
-          </div>
+          <div class="text-4xl font-bold pb-6 my-1">Promotional Website for our favorite TV show</div>
+          <div class="text-xl my-1">Website strategically designed for the public to learn more about their favorite
+            characters from this TV show.</div>
           <div class="relative overflow-hidden">
             <table class="table-fixed w-full text-left">
-              <thead class="">
+              <thead>
                 <tr>
-                  <td class="py-3" contenteditable="false">PROJECT INFO</td>
+                  <td class="py-3">PROJECT INFO</td>
                 </tr>
               </thead>
-              <tbody class="">
+              <tbody>
                 <tr class="divide-y-2">
-                  <td class="py-3" contenteditable="false">Year</td>
-                  <td class="py-3" contenteditable="false">2024</td>
+                  <td class="py-3">Year</td>
+                  <td class="py-3">2024</td>
                 </tr>
                 <tr class="divide-y-2">
-                  <td contenteditable="false" class=" py-3">Role</td>
-                  <td contenteditable="false" class=" py-3">Front-end Developer</td>
+                  <td class="py-3">Role</td>
+                  <td class="py-3">Front-end Developer</td>
                 </tr>
               </tbody>
             </table>
@@ -200,11 +176,9 @@
       </div>
     </section>
 
-    <section id="about" class="project-card opacity-0 py-16 px-8 bg-slate-200">
-      <h1 class="text-slate-950 text-10xl font-bold mb-8 text-center">About me</h1>
-      <!-- Cambiamos a flex-col para apilar los elementos -->
+    <section id="about" class="project-card opacity-0 py-16 px-8 bg-slate-200" data-aos="fade-left">
+      <h1 class="text-slate-950 text-10xl font-bold mb-1 text-center">About me</h1>
       <div class="flex flex-col items-center gap-8">
-        <!-- Contenedor de imagen y botones -->
         <div class="flex flex-col items-center gap-4 w-full md:w-1/3">
           <figure>
             <img src="./assets/joispfp.png" alt="jois" class="rounded-full pt-2 bg-gradient-dark my-3 shadow-lg">
@@ -222,68 +196,53 @@
             </div>
           </div>
         </div>
-        <!-- Contenedor de texto -->
         <div class="w-full md:w-2/3 text-xl bg-slate-300 rounded-2 p-4">
           <div class="flex flex-col">
-            <div class="my-3 text-justify font-bold">
-              I am a 21 years old student of Computer Engineering in my 7th semester, with a main focus on front-end
-              development.
-            </div>
-            <div class="my-3 text-justify">
-              I have participated in collaborative academic projects implemented under agile methodologies such as
-              Scrum, which has allowed me to develop teamwork skills, problem solving and adaptation to dynamic
-              environments.
-            </div>
-            <div class="my-3 text-justify">
-              Currently, I am looking for an internship opportunity that allows me to apply my knowledge, keep learning,
-              and overcome challenges to add value and develop as a professional in the technological field.
-            </div>
+            <div class="my-3 text-justify font-bold">I am a 21 years old student of Computer Engineering in my 7th
+              semester, with a main focus on front-end development.</div>
+            <div class="my-3 text-justify">I have participated in collaborative academic projects implemented under
+              agile methodologies such as Scrum, which has allowed me to develop teamwork skills, problem solving and
+              adaptation to dynamic environments.</div>
+            <div class="my-3 text-justify">Currently, I am looking for an internship opportunity that allows me to apply
+              my knowledge, keep learning, and overcome challenges to add value and develop as a professional in the
+              technological field.</div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="project-card opacity-0 py-16 px-8 rounded-2">
+  <footer id="contact" class="project-card opacity-0 py-16 px-8 rounded-2" data-aos="fade-up">
     <div class="text-beige-950 flex flex-col max-w-screen-xl mx-auto">
-      <div class="text-10xl font-bold mb-8 p-4 text-center">
-        Contact me
-      </div>
+      <div class="text-10xl font-bold mb-1 p-4 text-center">Contact me</div>
       <div class="flex flex-col md:flex-row justify-center gap-4">
         <div class="p-4 text-center">
-          <h1 class="font-bold text-4xl text-beige-600 mb-4">Write me an email</h1>
+          <h1 class="font-bold text-4xl text-beige-600 mb-1">Write me an email</h1>
           <form action="https://formsubmit.co/joisrosafer@gmail.com" method="POST"
             class="bg-slate-200 rounded-2 p-4 flex flex-col gap-4 shadow-lg">
             <div class="flex flex-col">
               <label for="name" class="text-left my-2">Name</label>
               <input type="text" id="name" name="name" class="bg-slate-50 rounded-1 p-2 w-full">
             </div>
-
             <div class="flex flex-col">
               <label for="email" class="text-left my-2">Email</label>
               <input type="email" id="email" name="email" class="bg-slate-50 rounded-1 p-2 w-full">
             </div>
-
             <div class="flex flex-col">
               <label for="subject" class="text-left my-2">Subject</label>
               <input type="text" id="subject" name="subject" class="bg-slate-50 rounded-1 p-2 w-full">
             </div>
-
             <div class="flex flex-col">
               <label for="message" class="text-left my-2">Message</label>
               <textarea id="message" name="message" class="bg-slate-50 rounded-1 p-2 w-full min-h-[100px]"></textarea>
             </div>
-
-            <button type="submit" class="btn-success hover:transition hover:scale-115 rounded-2 p-2 my-2">
-              Send
-            </button>
-
+            <button type="submit" class="btn-success hover:transition hover:scale-115 rounded-2 p-2 my-2">Send</button>
             <input type="hidden" name="_next" value="https://joisrosalesdev.github.io/JoisPortfolio/">
             <input type="hidden" name="_captcha" value="false">
           </form>
         </div>
         <div class="p-4 text-center">
-          <h1 class="font-bold text-4xl mb-4 text-beige-600">Let's be social</h1>
+          <h1 class="font-bold text-4xl mb-1 text-beige-600">Let's be social</h1>
           <div class="flex flex-row gap-4 justify-center">
             <div class="btn-primary hover:transition hover:scale-115 rounded-full w-fit p-2 mx-2">
               <a href="https://www.instagram.com/rosalesjois/"><img src="./assets/instagram.svg" alt="instagram"
