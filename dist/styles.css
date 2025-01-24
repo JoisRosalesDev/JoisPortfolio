@@ -1377,3 +1377,7 @@ xl:order-1
     }
   }
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
