@@ -14,7 +14,7 @@
 <body class="text-justify font-roboto text-slate-950 bg-gradient-light">
   <header class="w-full pt-4" data-aos="fade-down">
     <div class="container px-2 mx-auto">
-      <nav class="border-gray-200 bg-slate-50">
+      <nav class="border-gray-200 bg-slate-50 backdrop-blur-sm">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
           <span class="text-2xl font-bold text-slate-950">My Portfolio</span>
           <button data-collapse-toggle="navbar-default" type="button"
@@ -24,23 +24,17 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
-              class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-slate-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-              <li><a href="#home" class="block px-3 py-2 rounded text-slate-950 md:bg-transparent md:p-0"
-                  aria-current="page">Home</a></li>
-              <li><a href="#services"
-                  class="block px-3 py-2 rounded text-slate-950 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
+              class="flex flex-col p-4 mt-4 font-medium text-center border border-gray-100 rounded-lg md:p-0 bg-slate-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 container-nav">
+              <li><a href="#home" class="bg-options" aria-current="page">Home</a></li>
+              <li><a href="#services" class="bg-options">Services</a>
               </li>
-              <li><a href="#skills"
-                  class="block px-3 py-2 rounded text-slate-950 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Skills</a>
+              <li><a href="#skills" class="bg-options">Skills</a>
               </li>
-              <li><a href="#projects"
-                  class="block px-3 py-2 rounded text-slate-950 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Projects</a>
+              <li><a href="#projects" class="bg-options">Projects</a>
               </li>
-              <li><a href="#about"
-                  class="block px-3 py-2 rounded text-slate-950 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
+              <li><a href="#about" class="bg-options">About</a>
               </li>
-              <li><a href="#contact"
-                  class="block px-3 py-2 rounded text-slate-950 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+              <li><a href="#contact" class="bg-options">Contact</a>
               </li>
             </ul>
           </div>
@@ -248,15 +242,15 @@
         <div class="p-4 text-center">
           <h1 class="mb-1 text-4xl font-bold text-beige-600">Let's be social</h1>
           <div class="flex flex-row justify-center gap-4">
-            <div class="p-2 mx-2 rounded-full btn-primary hover:transition hover:scale-115 w-fit">
+            <div class="p-2 mx-2 bg-insta hover:transition hover:scale-115 w-fit">
               <a href="https://www.instagram.com/rosalesjois/"><img src="./assets/instagram.svg" alt="instagram"
                   class="w-icon"></a>
             </div>
-            <div class="p-2 mx-2 rounded-full btn-primary hover:transition hover:scale-115 w-fit">
+            <div class="p-2 mx-2 bg-link hover:transition hover:scale-115 w-fit">
               <a href="https://www.linkedin.com/in/jois-rosales-fernández-260baa24b"><img src="./assets/linkedin.svg"
                   alt="linkedin" class="w-icon"></a>
             </div>
-            <div class="p-2 mx-2 rounded-full btn-primary hover:transition hover:scale-115 w-fit">
+            <div class="p-2 mx-2 bg-git hover:transition hover:scale-115 w-fit">
               <a href="https://github.com/JoisRosalesDev"><img src="./assets/github.svg" alt="github"
                   class="w-icon"></a>
             </div>
