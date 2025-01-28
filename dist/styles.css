@@ -685,6 +685,10 @@ video {
   width: fit-content;
 }
 
+.w-project{
+  width: 100vh;
+}
+
 .w-icon {
   width: 32px;
   height: auto;
